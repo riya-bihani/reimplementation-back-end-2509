@@ -56,4 +56,17 @@ class Response < ApplicationRecord
     end
     sum
   end
+
+  def email(partial = 'new_submission')
+    defn = { body: { partial_name: partial } }
+    response_map = ResponseMap.find(map_id)
+    participant = Participant.find(response_map.reviewer_id)
+    assignment = Assignment.find(participant.parent_id)
+
+    defn[:subject] = "A new submission is available for #{assignment.name}"
+
+    visitor = EmailNotificationVisitor.new
+    response_map.accept(visitor, defn, participant, assignment)
+  end
+
 end
