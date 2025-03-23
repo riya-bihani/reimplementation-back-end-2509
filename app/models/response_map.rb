@@ -39,8 +39,8 @@ class ResponseMap < ApplicationRecord
     responses
   end
 
-  def accept(visitor, defn, participant, assignment)
-    visitor.visit_other_response_map(self, defn, participant, assignment)
+  def accept(visitor)
+    visitor.visit_response(self)
   end
 
 end

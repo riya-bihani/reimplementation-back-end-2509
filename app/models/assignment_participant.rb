@@ -17,4 +17,8 @@ class AssignmentParticipant < Participant
     self.save
   end
 
+  def accept(visitor)
+    visitor.visit_response(self)
+  end
+  
 end

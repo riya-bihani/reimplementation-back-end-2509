@@ -120,6 +120,14 @@ Rails.application.routes.draw do
           delete '/:id', to: 'participants#destroy'
         end
       end
+
+      resources :email do
+        collection do
+          post '/send_feedback_email', to: 'email#send_feedback_email'
+        end
+      end
+
+
     end
   end
 end

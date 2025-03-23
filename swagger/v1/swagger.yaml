@@ -130,6 +130,35 @@ paths:
       responses:
         '204':
           description: successful
+
+  "/api/v1/email/send_feedback_email":
+    post:
+      summary: Send Feedback Email
+      tags:
+      - Email
+      responses:
+        '200':
+          description: Feedback email sent successfully
+        '400':
+          description: Invalid request or missing parameters
+        '422':
+          description: Unprocessable entity
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                assignment_id:
+                  type: integer
+                  description: The ID of the assignment related to the feedback
+                reviewed_object_id:
+                  type: integer
+                  description: The ID of the reviewed object (e.g., the response object)
+              required:
+              - assignment_id
+              - reviewed_object_id
+
   "/api/v1/bookmarks":
     get:
       summary: list bookmarks
