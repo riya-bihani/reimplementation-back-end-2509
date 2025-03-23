@@ -1,0 +1,30 @@
+current directory: C:/Users/bihan/Desktop/OODD_HW/Program3_Final/reimplementation-back-end-2509/vendor/bundle/ruby/3.2.0/gems/io-console-0.8.0/ext/io/console
+C:/Ruby32/bin/ruby.exe extconf.rb
+checking for rb_syserr_fail_str(0, Qnil)... yes
+checking for rb_interned_str_cstr()... yes
+checking for rb_io_path()... no
+checking for rb_io_descriptor()... yes
+checking for rb_io_get_write_io()... yes
+checking for rb_io_closed_p()... no
+checking for rb_io_open_descriptor()... no
+checking for rb_ractor_local_storage_value_newkey()... yes
+checking for HAVE_RUBY_FIBER_SCHEDULER_H... yes
+checking for ttyname_r()... no
+checking for ttyname()... no
+creating Makefile
+
+current directory: C:/Users/bihan/Desktop/OODD_HW/Program3_Final/reimplementation-back-end-2509/vendor/bundle/ruby/3.2.0/gems/io-console-0.8.0/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20250321-23516-two207 sitelibdir\=./.gem.20250321-23516-two207 clean
+
+current directory: C:/Users/bihan/Desktop/OODD_HW/Program3_Final/reimplementation-back-end-2509/vendor/bundle/ruby/3.2.0/gems/io-console-0.8.0/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20250321-23516-two207 sitelibdir\=./.gem.20250321-23516-two207
+generating console-i386-mingw32.def
+compiling console.c
+linking shared-object io/console.so
+
+current directory: C:/Users/bihan/Desktop/OODD_HW/Program3_Final/reimplementation-back-end-2509/vendor/bundle/ruby/3.2.0/gems/io-console-0.8.0/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20250321-23516-two207 sitelibdir\=./.gem.20250321-23516-two207 install
+/usr/bin/install -c -m 0755 console.so ./.gem.20250321-23516-two207/io
+
+current directory: C:/Users/bihan/Desktop/OODD_HW/Program3_Final/reimplementation-back-end-2509/vendor/bundle/ruby/3.2.0/gems/io-console-0.8.0/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20250321-23516-two207 sitelibdir\=./.gem.20250321-23516-two207 clean

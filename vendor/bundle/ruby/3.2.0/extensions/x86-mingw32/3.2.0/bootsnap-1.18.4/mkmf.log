@@ -1,0 +1,105 @@
+have_func: checking for fdatasync() in unistd.h... -------------------- no
+
+PATH=".;C:/Ruby32/lib;C:\Ruby32\bin;C:\Ruby32\msys32\mingw32\bin;C:\Ruby32\msys32\usr\bin;C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-17.0.1\bin\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;D:\Frontend\React\nodejs\;C:\Program Files\MongoDB\Server\6.0\bin;C:\mongosh-1.8.0-win32-x64\mongosh-1.8.0-win32-x64\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Ruby32\bin;C:\Ruby32-x64\bin;C:\Ruby34-x64\bin;C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-17.0.1\bin\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;D:\Frontend\React\nodejs\;C:\Program Files\MongoDB\Server\6.0\bin;C:\mongosh-1.8.0-win32-x64\mongosh-1.8.0-win32-x64\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Users\bihan\OneDrive\Documents\Anaconda;C:\Users\bihan\OneDrive\Documents\Anaconda\Library\mingw-w64\bin;C:\Users\bihan\OneDrive\Documents\Anaconda\Library\usr\bin;C:\Users\bihan\OneDrive\Documents\Anaconda\Library\bin;C:\Users\bihan\OneDrive\Documents\A;C:\Program Files\MongoDB\Server\8.0\bin;C:\Users\bihan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\bihan\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\RubyMine 2024.3.4\bin;" "gcc -o conftest.exe -IC:/Ruby32/include/ruby-3.2.0/i386-mingw32 -IC:/Ruby32/include/ruby-3.2.0/ruby/backward -IC:/Ruby32/include/ruby-3.2.0 -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LC:/Ruby32/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed     -lmsvcrt-ruby320  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+PATH=".;C:/Ruby32/lib;C:\Ruby32\bin;C:\Ruby32\msys32\mingw32\bin;C:\Ruby32\msys32\usr\bin;C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-17.0.1\bin\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;D:\Frontend\React\nodejs\;C:\Program Files\MongoDB\Server\6.0\bin;C:\mongosh-1.8.0-win32-x64\mongosh-1.8.0-win32-x64\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Ruby32\bin;C:\Ruby32-x64\bin;C:\Ruby34-x64\bin;C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-17.0.1\bin\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;D:\Frontend\React\nodejs\;C:\Program Files\MongoDB\Server\6.0\bin;C:\mongosh-1.8.0-win32-x64\mongosh-1.8.0-win32-x64\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Users\bihan\OneDrive\Documents\Anaconda;C:\Users\bihan\OneDrive\Documents\Anaconda\Library\mingw-w64\bin;C:\Users\bihan\OneDrive\Documents\Anaconda\Library\usr\bin;C:\Users\bihan\OneDrive\Documents\Anaconda\Library\bin;C:\Users\bihan\OneDrive\Documents\A;C:\Program Files\MongoDB\Server\8.0\bin;C:\Users\bihan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\bihan\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\RubyMine 2024.3.4\bin;" "gcc -o conftest.exe -IC:/Ruby32/include/ruby-3.2.0/i386-mingw32 -IC:/Ruby32/include/ruby-3.2.0/ruby/backward -IC:/Ruby32/include/ruby-3.2.0 -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LC:/Ruby32/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed     -lmsvcrt-ruby320  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+conftest.c: In function 't':
+conftest.c:18:57: error: 'fdatasync' undeclared (first use in this function)
+   18 | int t(void) { void ((*volatile p)()); p = (void ((*)()))fdatasync; return !p; }
+      |                                                         ^~~~~~~~~
+conftest.c:18:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <unistd.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     int (* volatile tp)(void)=(int (*)(void))&t;
+13:     printf("%d", (*tp)());
+14:   }
+15: 
+16:   return !!argv[argc];
+17: }
+18: int t(void) { void ((*volatile p)()); p = (void ((*)()))fdatasync; return !p; }
+/* end */
+
+PATH=".;C:/Ruby32/lib;C:\Ruby32\bin;C:\Ruby32\msys32\mingw32\bin;C:\Ruby32\msys32\usr\bin;C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-17.0.1\bin\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;D:\Frontend\React\nodejs\;C:\Program Files\MongoDB\Server\6.0\bin;C:\mongosh-1.8.0-win32-x64\mongosh-1.8.0-win32-x64\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Ruby32\bin;C:\Ruby32-x64\bin;C:\Ruby34-x64\bin;C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-17.0.1\bin\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;D:\Frontend\React\nodejs\;C:\Program Files\MongoDB\Server\6.0\bin;C:\mongosh-1.8.0-win32-x64\mongosh-1.8.0-win32-x64\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Users\bihan\OneDrive\Documents\Anaconda;C:\Users\bihan\OneDrive\Documents\Anaconda\Library\mingw-w64\bin;C:\Users\bihan\OneDrive\Documents\Anaconda\Library\usr\bin;C:\Users\bihan\OneDrive\Documents\Anaconda\Library\bin;C:\Users\bihan\OneDrive\Documents\A;C:\Program Files\MongoDB\Server\8.0\bin;C:\Users\bihan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\bihan\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\RubyMine 2024.3.4\bin;" "gcc -o conftest.exe -IC:/Ruby32/include/ruby-3.2.0/i386-mingw32 -IC:/Ruby32/include/ruby-3.2.0/ruby/backward -IC:/Ruby32/include/ruby-3.2.0 -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LC:/Ruby32/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed     -lmsvcrt-ruby320  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+C:/Ruby32/msys32/mingw32/bin/../lib/gcc/i686-w64-mingw32/14.2.0/../../../../i686-w64-mingw32/bin/ld.exe: C:\Users\bihan\AppData\Local\Temp\ccA5b2yS.o:conftest.c:(.text+0x4): undefined reference to `fdatasync'
+collect2.exe: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <unistd.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     int (* volatile tp)(void)=(int (*)(void))&t;
+13:     printf("%d", (*tp)());
+14:   }
+15: 
+16:   return !!argv[argc];
+17: }
+18: extern void fdatasync();
+19: int t(void) { fdatasync(); return 0; }
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -O3 is accepted as CFLAGS... -------------------- yes
+
+PATH=".;C:/Ruby32/lib;C:\Ruby32\bin;C:\Ruby32\msys32\mingw32\bin;C:\Ruby32\msys32\usr\bin;C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-17.0.1\bin\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;D:\Frontend\React\nodejs\;C:\Program Files\MongoDB\Server\6.0\bin;C:\mongosh-1.8.0-win32-x64\mongosh-1.8.0-win32-x64\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Ruby32\bin;C:\Ruby32-x64\bin;C:\Ruby34-x64\bin;C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-17.0.1\bin\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;D:\Frontend\React\nodejs\;C:\Program Files\MongoDB\Server\6.0\bin;C:\mongosh-1.8.0-win32-x64\mongosh-1.8.0-win32-x64\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Users\bihan\OneDrive\Documents\Anaconda;C:\Users\bihan\OneDrive\Documents\Anaconda\Library\mingw-w64\bin;C:\Users\bihan\OneDrive\Documents\Anaconda\Library\usr\bin;C:\Users\bihan\OneDrive\Documents\Anaconda\Library\bin;C:\Users\bihan\OneDrive\Documents\A;C:\Program Files\MongoDB\Server\8.0\bin;C:\Users\bihan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\bihan\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\RubyMine 2024.3.4\bin;" "gcc -IC:/Ruby32/include/ruby-3.2.0/i386-mingw32 -IC:/Ruby32/include/ruby-3.2.0/ruby/backward -IC:/Ruby32/include/ruby-3.2.0 -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong  -O3 -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -std=c99 is accepted as CFLAGS... -------------------- yes
+
+PATH=".;C:/Ruby32/lib;C:\Ruby32\bin;C:\Ruby32\msys32\mingw32\bin;C:\Ruby32\msys32\usr\bin;C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-17.0.1\bin\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;D:\Frontend\React\nodejs\;C:\Program Files\MongoDB\Server\6.0\bin;C:\mongosh-1.8.0-win32-x64\mongosh-1.8.0-win32-x64\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Ruby32\bin;C:\Ruby32-x64\bin;C:\Ruby34-x64\bin;C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-17.0.1\bin\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;D:\Frontend\React\nodejs\;C:\Program Files\MongoDB\Server\6.0\bin;C:\mongosh-1.8.0-win32-x64\mongosh-1.8.0-win32-x64\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Users\bihan\OneDrive\Documents\Anaconda;C:\Users\bihan\OneDrive\Documents\Anaconda\Library\mingw-w64\bin;C:\Users\bihan\OneDrive\Documents\Anaconda\Library\usr\bin;C:\Users\bihan\OneDrive\Documents\Anaconda\Library\bin;C:\Users\bihan\OneDrive\Documents\A;C:\Program Files\MongoDB\Server\8.0\bin;C:\Users\bihan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\bihan\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\RubyMine 2024.3.4\bin;" "gcc -IC:/Ruby32/include/ruby-3.2.0/i386-mingw32 -IC:/Ruby32/include/ruby-3.2.0/ruby/backward -IC:/Ruby32/include/ruby-3.2.0 -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -O3  -std=c99 -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+

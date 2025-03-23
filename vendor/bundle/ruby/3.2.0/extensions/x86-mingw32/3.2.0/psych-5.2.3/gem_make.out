@@ -1,0 +1,31 @@
+current directory: C:/Users/bihan/Desktop/OODD_HW/Program3_Final/reimplementation-back-end-2509/vendor/bundle/ruby/3.2.0/gems/psych-5.2.3/ext/psych
+C:/Ruby32/bin/ruby.exe extconf.rb
+checking for yaml.h... yes
+checking for yaml_get_version() in -lyaml... yes
+creating Makefile
+
+current directory: C:/Users/bihan/Desktop/OODD_HW/Program3_Final/reimplementation-back-end-2509/vendor/bundle/ruby/3.2.0/gems/psych-5.2.3/ext/psych
+make DESTDIR\= sitearchdir\=./.gem.20250321-23516-4y4aq2 sitelibdir\=./.gem.20250321-23516-4y4aq2 clean
+cd libyaml && make clean
+/bin/sh: line 1: cd: libyaml: No such file or directory
+make: [Makefile:287: clean-so] Error 1 (ignored)
+
+current directory: C:/Users/bihan/Desktop/OODD_HW/Program3_Final/reimplementation-back-end-2509/vendor/bundle/ruby/3.2.0/gems/psych-5.2.3/ext/psych
+make DESTDIR\= sitearchdir\=./.gem.20250321-23516-4y4aq2 sitelibdir\=./.gem.20250321-23516-4y4aq2
+generating psych-i386-mingw32.def
+compiling psych.c
+compiling psych_emitter.c
+compiling psych_parser.c
+compiling psych_to_ruby.c
+compiling psych_yaml_tree.c
+linking shared-object psych.so
+
+current directory: C:/Users/bihan/Desktop/OODD_HW/Program3_Final/reimplementation-back-end-2509/vendor/bundle/ruby/3.2.0/gems/psych-5.2.3/ext/psych
+make DESTDIR\= sitearchdir\=./.gem.20250321-23516-4y4aq2 sitelibdir\=./.gem.20250321-23516-4y4aq2 install
+/usr/bin/install -c -m 0755 psych.so ./.gem.20250321-23516-4y4aq2
+
+current directory: C:/Users/bihan/Desktop/OODD_HW/Program3_Final/reimplementation-back-end-2509/vendor/bundle/ruby/3.2.0/gems/psych-5.2.3/ext/psych
+make DESTDIR\= sitearchdir\=./.gem.20250321-23516-4y4aq2 sitelibdir\=./.gem.20250321-23516-4y4aq2 clean
+cd libyaml && make clean
+/bin/sh: line 1: cd: libyaml: No such file or directory
+make: [Makefile:287: clean-so] Error 1 (ignored)

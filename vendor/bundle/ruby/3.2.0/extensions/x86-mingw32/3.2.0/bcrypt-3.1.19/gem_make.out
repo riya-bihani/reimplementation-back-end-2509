@@ -1,0 +1,29 @@
+current directory: C:/Users/bihan/Desktop/OODD_HW/Program3_Final/reimplementation-back-end-2509/vendor/bundle/ruby/3.2.0/gems/bcrypt-3.1.19/ext/mri
+C:/Ruby32/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: C:/Users/bihan/Desktop/OODD_HW/Program3_Final/reimplementation-back-end-2509/vendor/bundle/ruby/3.2.0/gems/bcrypt-3.1.19/ext/mri
+make DESTDIR\= sitearchdir\=./.gem.20250321-23516-fg5iji sitelibdir\=./.gem.20250321-23516-fg5iji clean
+
+current directory: C:/Users/bihan/Desktop/OODD_HW/Program3_Final/reimplementation-back-end-2509/vendor/bundle/ruby/3.2.0/gems/bcrypt-3.1.19/ext/mri
+make DESTDIR\= sitearchdir\=./.gem.20250321-23516-fg5iji sitelibdir\=./.gem.20250321-23516-fg5iji
+generating bcrypt_ext-i386-mingw32.def
+compiling bcrypt_ext.c
+compiling crypt_blowfish.c
+gcc  -D__SKIP_GNU  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64   -c -o x86.o x86.S
+compiling crypt_gensalt.c
+compiling wrapper.c
+wrapper.c:182:60: warning: 'struct crypt_data' declared inside parameter list will not be visible outside of this definition or declaration
+  182 | char *crypt_r(const char *key, const char *setting, struct crypt_data *data)
+      |                                                            ^~~~~~~~~~
+wrapper.c:189:7: warning: 'crypt' redeclared without dllimport attribute: previous dllimport ignored [-Wattributes]
+  189 | char *crypt(const char *key, const char *setting)
+      |       ^~~~~
+linking shared-object bcrypt_ext.so
+
+current directory: C:/Users/bihan/Desktop/OODD_HW/Program3_Final/reimplementation-back-end-2509/vendor/bundle/ruby/3.2.0/gems/bcrypt-3.1.19/ext/mri
+make DESTDIR\= sitearchdir\=./.gem.20250321-23516-fg5iji sitelibdir\=./.gem.20250321-23516-fg5iji install
+/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20250321-23516-fg5iji
+
+current directory: C:/Users/bihan/Desktop/OODD_HW/Program3_Final/reimplementation-back-end-2509/vendor/bundle/ruby/3.2.0/gems/bcrypt-3.1.19/ext/mri
+make DESTDIR\= sitearchdir\=./.gem.20250321-23516-fg5iji sitelibdir\=./.gem.20250321-23516-fg5iji clean
