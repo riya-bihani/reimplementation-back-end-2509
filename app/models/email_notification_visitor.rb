@@ -20,6 +20,7 @@ require_relative 'notification_visitor'
 #     Mailer.sync_message(defn).deliver
 #   end
 # end
+# Check
 
 class EmailNotificationVisitor
   def visit_feedback_response_map(feedback_response_map, defn, participant, assignment)
