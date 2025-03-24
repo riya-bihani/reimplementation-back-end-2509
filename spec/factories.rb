@@ -1,4 +1,8 @@
 FactoryBot.define do
+  factory :visitor_pattern_test do
+    
+  end
+
   factory :student_task do
     assignment { nil }
     current_stage { "MyString" }

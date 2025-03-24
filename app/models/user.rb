@@ -114,4 +114,8 @@ class User < ApplicationRecord
     self.etc_icons_on_homepage ||= true
   end
 
+  def accept(visitor)
+    visitor.visit_response(self)
+  end
+
 end

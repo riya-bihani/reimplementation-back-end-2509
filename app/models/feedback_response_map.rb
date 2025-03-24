@@ -103,10 +103,15 @@ class FeedbackResponseMap < ResponseMap
   
   def send_feedback_email(defn, assignment)
     email_visitor = EmailVisitor.new
-    email_visitor.visit_response(self)
-    email_visitor.visit_response_map(self)
-    email_visitor.visit_participant(self.reviewer)  # Assuming the reviewer is the participant to be notified
-    email_visitor.visit_user(self.reviewer.user)    # Assuming `user` is a method of `AssignmentParticipant` to fetch the User
+    # We need to get the original reviewer from the response chain
+    response = Response.find(reviewed_object_id) # Get the response being commented on
+    response_map = ResponseMap.find(response.map_id) # Get its response map
+    participant = AssignmentParticipant.find(response_map.reviewer_id) # Get original reviewer
+
+    email_visitor.visit_response(response)
+    email_visitor.visit_response_map(response_map) 
+    email_visitor.visit_participant(participant)
+    email_visitor.visit_user(participant.user)
     email_visitor.send_email(defn, assignment)
   end
 end
