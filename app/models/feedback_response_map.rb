@@ -101,4 +101,14 @@ class FeedbackResponseMap < ResponseMap
   #   visitor.visit_feedback_response_map(self, defn, participant, assignment)
   # end
   
+  def send_feedback_email(defn, assignment)
+    email_visitor = EmailVisitor.new
+    email_visitor.visit_response(self)
+    email_visitor.visit_response_map(self)
+    email_visitor.visit_participant(self.reviewer)  # Assuming the reviewer is the participant to be notified
+    email_visitor.visit_user(self.reviewer.user)    # Assuming `user` is a method of `AssignmentParticipant` to fetch the User
+    email_visitor.send_email(defn, assignment)
+  end
+end
+
 end

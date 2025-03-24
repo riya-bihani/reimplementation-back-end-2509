@@ -121,12 +121,6 @@ Rails.application.routes.draw do
         end
       end
 
-      resources :email do
-        collection do
-          post '/send_feedback_email', to: 'email#send_feedback_email'
-        end
-      end
-
 
     end
   end
